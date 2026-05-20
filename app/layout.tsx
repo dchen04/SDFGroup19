@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import CoralReefBackdrop from "@/components/CoralReefBackdrop";
 
 export const metadata: Metadata = {
   title: "Stable Reef — Non-USD / Non-EUR Stablecoins",
@@ -20,7 +21,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <CoralReefBackdrop />
+        {children}
+      </body>
     </html>
   );
 }
